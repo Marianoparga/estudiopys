@@ -16,15 +16,8 @@ body {
 }
 
 header {
-  background-color: rgb(255, 255, 255);
   margin-bottom: 40px;
-  font-size: large;
-  display: grid;
-  justify-content: center;
-}
-
-nav{
-  list-style-type: none;
+  font-size: larger;
 }
 
 .navbar-brand, .navbar-nav{
@@ -219,11 +212,14 @@ main{
 nav{
   grid-area: nav;
 }
-header{
-  grid-area: header;
-}
+
 .imagenes-container{
   grid-area: imagenes;
+  grid-row-gap: 24px;
+}
+.img-wrapper {
+  display: flex;
+  justify-content: center;
 }
 .video-container{
   grid-area: video;
@@ -236,7 +232,6 @@ footer{
   display: grid;
   gap: 20px;
   grid-template-areas: 
-  "header"
   "nav"
   "main"
   "imagenes"
@@ -248,6 +243,7 @@ footer{
   display: flex;
   justify-content: center;
   width: 90%;
+  max-width: 560px;
 }
 .pys{
   margin: auto;
@@ -319,26 +315,33 @@ footer{
   background-color: #8da7f5;
 }
 
-
-
-@media (min-width: 500px){
-  .estudio-contable{
-    margin: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "imagenes video"
-    "footer footer";
-  }
-}
-header{
-  background-color: rgb(231, 240, 252);
-}
-nav{
+.mision-vision{
   display: flex;
-  justify-content:space-evenly;
+  flex-direction: column;
+}
+.mision{
+  margin-bottom: 20px;
+}
+.mision, 
+.vision{
+  border: 10px solid rgb(231, 240, 252);
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px){
+  .mision-vision{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+.mision, 
+.vision{
+  width: 45%;
+  border: 10px solid rgb(231, 240, 252);
+  box-sizing: border-box;
+}
+
+
 }
 
 
@@ -347,7 +350,6 @@ nav{
     margin: 0;
     grid-template-columns: 1fr 0.15fr;
     grid-template-areas: 
-    "header header"
     "nav nav"
     "main imagenes"
     "video imagenes"
@@ -441,8 +443,5 @@ nav{
     width: 339px;
     height: 139px;
   }
-.video1{
-  max-width: 70%;
-}
 
 }

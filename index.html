@@ -4,59 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Estudio Contable Parga y Serra</title>
 </head>
 <body>
-    <div class="estudio-contable">
     <header>
-        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                    <a class="navbar-brand" 
-                    href="index.html">INICIO</a>
-                    <button class="navbar-toggler" 
-                    type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#navbarNavAltMarkup" 
-                    aria-controls="navbarNavAltMarkup" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html">
+                    <img class="foto1" src="./images/logopys.png" 
+                    alt="papeles de trabajo de un contador" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" 
-                    id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                    <a class="nav-link active" 
-                    aria-current="page" 
-                    href="./sections/estudio.html">ESTUDIO</a>
-                    <a class="nav-link" 
-                    href="./sections/trabajos.html">TRABAJOS</a>
-                    <a class="nav-link" 
-                    href="./sections/impuestos.html">IMPUESTOS</a>
-                    <a class="nav-link disabled" 
-                    href="./sections/contacto.html" 
-                    tabindex="-1" 
-                    aria-disabled="true">CONTACTO</a>
-                    </div>
-                </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./sections/estudio.html">ESTUDIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sections/trabajos.html">TRABAJOS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./sections/impuestos.html">IMPUESTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./sections/contacto.html" >CONTACTO</a>
+                </li>
+            </ul>
             </div>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-                <form class="d-flex">
-                <input class="form-control me-2" 
-                type="search" 
-                placeholder="Search" 
-                aria-label="Search">
-                <button class="btn btn-outline-success" 
-                type="submit">Buscar</button>
-                </form>
-            </div>
-        </nav>
-        </nav>
+        </div>
         </nav>
     </header>
-
+    <div class="estudio-contable">
 
     <main>
         <h1>ESTUDIO CONTABLE PARGA Y SERRA</h1>
@@ -72,12 +54,18 @@
     </main>
 
     <section class="imagenes-container">
-        <img class="foto1" src="./images/logo-pys.jpg" 
+        <div class="img-wrapper">
+            <img class="foto1" src="./images/logo-pys.jpg" 
         alt="papeles de trabajo de un contador" />
-        <img class="foto3" src="./images/uba2.png" 
+        </div>
+        <div class="img-wrapper">
+            <img class="foto3" src="./images/uba2.png" 
         alt="calculadora">
-        <img class="foto4" src="./images/consejo.jpeg" 
+        </div>
+        <div class="img-wrapper">
+            <img class="foto4" src="./images/consejo.jpeg" 
         alt="logo consejo">
+        </div>
 
     </section>
     <article class="video-container">
@@ -124,5 +112,6 @@
         </div>
     </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
