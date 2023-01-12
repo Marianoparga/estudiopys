@@ -211,6 +211,7 @@ main{
 
 nav{
   grid-area: nav;
+  background-color: rgb(231, 240, 252);
 }
 
 .imagenes-container{
