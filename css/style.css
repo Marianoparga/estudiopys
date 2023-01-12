@@ -65,8 +65,8 @@ main{
   grid-area: foto3;
 }
 .foto4{
-  max-width: 259px;
-  max-height: 195px;
+  max-width: 201px;
+  max-height: 201px;
   display: grid;
   grid-area: foto4;
 }
@@ -362,28 +362,6 @@ nav{
   "foto3"
   "foto4";
 }
-.mision{
-  display: grid;
-  grid-area: mision;
-}
-.vision{
-  display: grid;
-  grid-area: vision;
-}
-.presentacion{
-  display: grid;
-  grid-area: presentacion;
-}
-.estudio-container{
-  margin: 0;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  "header header"
-  "nav nav"
-  "presentacion presentacion"
-  "mision vision"
-  "footer footer";
-}
 
 @media (min-width:1024px){
   .grilla {  display: grid;
@@ -463,5 +441,8 @@ nav{
     width: 339px;
     height: 139px;
   }
+.video1{
+  max-width: 70%;
+}
 
 }
