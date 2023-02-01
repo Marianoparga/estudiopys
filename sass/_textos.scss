@@ -1,0 +1,63 @@
+@mixin box($borderColor, $backgroundColor, $bordersize) {
+    border:$bordersize solid $borderColor;
+    background: $backgroundColor;
+  }
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+h1, .texto-principal{
+    @include box(rgb(231, 240, 252), transparent, 3px )
+}
+
+p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 1em;
+}
+
+.texto-principal{
+    text-align:center;
+}
+
+.parrafo { grid-area: parrafo; 
+}
+
+.texto { grid-area: texto; 
+}
+
+.texot { grid-area: texot; 
+}
+
+.titulo { grid-area: titulo;
+text-align: center; 
+text-decoration: underline;
+}
+
+.presentacion{
+    padding: 1em;
+    text-align: center;
+}
+
+.mision-vision{
+    display: flex;
+    flex-direction: column;
+}
+
+.mision{
+    margin-bottom: 20px;
+}
+
+.mision, 
+.vision{
+    @include box(rgb(231, 240, 252),rgba(231, 240, 252, 0.5) ,3px );
+    box-sizing: border-box;
+}
